@@ -14,7 +14,11 @@ class MenuController extends Controller
         $previews = MenuItem::inRandomOrder()->take(36)->get();
         $bestsellers = MenuItem::orderByDesc('order_count')->take(5)->get();
 
-        return view('index', compact('categories', 'previews', 'bestsellers'));
+        return view('index', [
+    'categories' => $categories,
+    'previews' => $previews,
+    'bestSellers' => $bestsellers,
+]);
     }
 
         public function category($category)
