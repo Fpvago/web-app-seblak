@@ -17,7 +17,7 @@ class MenuController extends Controller
         return view('index', [
     'categories' => $categories,
     'previews' => $previews,
-    'bestSellers' => $bestsellers,
+    'bestsellers' => $bestsellers,
 ]);
     }
 
