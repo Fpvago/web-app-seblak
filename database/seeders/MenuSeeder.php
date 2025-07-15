@@ -71,6 +71,7 @@ class MenuSeeder extends Seeder
             ['name' => 'Gooday', 'category' => 'minuman', 'price' => 5000],
             ['name' => 'Teh Tarik', 'category' => 'minuman', 'price' => 5000],
             ['name' => 'Pop Ice', 'category' => 'minuman', 'price' => 5000],
+            ['name' => 'Kopi Golda', 'category' => 'minuman', 'price' => 4000],
         ];
 
         foreach ($menuItems as $item) {
